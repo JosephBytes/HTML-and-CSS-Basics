@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiva="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title> Joseph's site </title> <!-- tab name-->
+        <!-- Change tab icon image (176x176px size reccomended; resize in paint app if necessary) -->
+        <link rel="icon" type="image/jpg" href="Media/TabIcon.jpg">
+        <!-- You want to put fonts before connecting external style sheet. So the stylesheet has access to the fonts -->
+            <!-- This is the first link on fonts.google.com (Embed code in the <head> of your html) -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@100..900&family=Madimi+One&family=Roboto:wght@100&family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+        <!-- External style application (linking CSS file)-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    
+    <style> /* In-line style application (without CSS file) (Notice how comment of CSS type) */
+       /* In-line overwrites CSS stylesheet */
+       body { 
+            background-color: black; /* change background color doesn't go into effect */
+        } h2 { 
+            color:magenta; /* header1 color (Internal style application is applied AFTER Exteral, so this magenta will go into effect)*/
+        } p { 
+            color: pink; /* paragraph tex*/
+        }
+    </style>
+
+    <body style="background-color: lightsalmon"> <!-- change background color again (overwrites in-line style before which has previously overwritten external CSS)-->
+        <!-- Add a Header -->
+        <header style="background-color: mediumpurple">
+            <h1> Welcome to Joseph Bytes </h1>
+                <a href=""> Home </a>    
+                <a href=""> Software </a>
+                <a href=""> Products </a>
+                <a href=""> Contact us </a>
+        </header>
+        <h1 class="robotoFont"> h1 What's up, please, look around! </h1> <!-- in-line styling may be applied and ovverides.-->
+        <hr> <!-- horizontal rule (horizontal line across page)-->
+        <h2> h2 size test </h2>
+        <h3> h3 size test</h3>
+        <h4> h4 size test </h4>
+        <p> Welcome to my website! My name is Joseph.</p>
+        <br> <!-- insert break-line-->
+        <p class="robotoFont"> Welcome to my website! My name is Joseph.</p>
+        <p id="p1" class="odd"> 11 </p>
+        <p id="p2" class="odd"> 33 </p>
+        <p id="p3" class="even"> 22 </p>
+        <p id="p4" class="even"> 44 </p>
+        <p id="f1" class="rubikDoodleFont"> 5em Rubik Font Size Test </p>
+        <!-- Hyperlink goes to link (in the same page) -->
+        <a href="https://github.com/JosephBytes"> Go to GitHub(in this page) </a> <br>
+        <!-- Hyperlink goes to link (in a new page with target="_blank" keyword) -->
+        <a href="https://github.com/JosephBytes" target="_blank"> Jump to GitHub(in a new page) </a> <br>
+        <!-- Hyperlink to another file -->
+        <a href="Lyrics.html" target="_blank"> Winter Vibes</a> <br>
+        <!-- Email me -->
+        <a href="mailto:josephabdul33@gmail.com"> Write to me! </a>
+        <p id ="madimiOne"> I have a dog named Bello, he's a Chihuahua! Here's a picture of him</p>
+        <!-- Link an image (alt message for the visually impaired with an extention on their browser)-->
+        <img src="Media/Bello.jpg" alt="This is an image of Bello" height = "480" width="370">
+        
+        <p> My first job was at a Restaraunt called Poké Bar, click the image to go to their website!</p>
+        <!-- Turn images to hyperlinks (put target=blank in hyperlink line instead of image line if you wish to open in a new tab)-->
+        <a href="https://www.ilovepokebar.com/menu" target="_blank"> 
+            <img src="Media/PokeBar.jpg" alt="An image of Poke Bar" height="480" width="500">
+        </a>
+        <!-- Insert a GIF -->
+        <img src="Media/PokeGIF.gif" alt="A gif of a Poke bowl" height="480" width="500"> <br>
+        
+        <h3> Play All I want for Christmas Is You Below </h3>
+        <!-- Add audio (specify autoplay, muted, and loop such as below (remove any attribute(s)) -->
+        <audio controls autoplay muted loop>
+            <source src="Media/All_I_Want.mp3">
+        </audio>
+
+        <h3> One of my favorite cars is the BMW M5. Take a Look. </h3>
+        <!-- Add Video (specify autoplay, muted, and loop such as below (remove any attribute(s)))-->
+        <video src="Media/BMW_M5.mp4" width="800px" controls autoplay muted loop> </video>
+
+        <!-- Make video a hyperlink when clicked -->
+        <h3> My Favorite Bird is the Humming bird. <br> Click the video to open a link to learn more about them.</h3>
+        <a target="_blank" href="https://nationalzoo.si.edu/migratory-birds/hummingbirds">
+            <video src="Media/Hummingbird.mp4" width="800px" controls autoplay muted loop> </video>
+        </a> <br>
+
+        <!-- Text Formatting (you can't bold h1,h2,h3.. because it's already bolded)-->
+        <h3>This is normal text        </h3>
+        <p>This is <b>     bold         </b> text </p> <!-- cannot bold a header only paragraph like this -->
+        <h3>This is <i>    italic       </i> text </h3>
+        <h3>This is <u>    underlined   </u> text </h3>
+        <h3>This is <del>  deleted      </del> text </h3> <!-- strike through word -->
+        <h3>This is <big>  big          </big> text </h3>
+        <h3>This is <small>small        </small> text </h3>
+        <h3>This is <sub>  subscript    </sub> text </h3>
+        <h3>This is <sup>  superscript  </sup> text </h3>
+        <h3>This is <tt>   monospaced   </tt> text </h3>
+        <h3>This is <mark> Default mark </mark> text  </h3> <!-- does a yellow highlight in range -->
+        <h3>This is <mark style="background-color:lightgreen">
+                     Light green mark </mark> text </h3>
+        
+        <!-- Span and Div Text formatting -->
+        <h1><span style="background-color: white"> This is a SPAN title </span></h1>
+        <h1><div style="background-color: lightskyblue"> This is a DIV title </div></h1>
+        <p><span style="background-color:white"> This is a span title </span></p> <!-- Notice how the remaining line is grey specified in the CSS file -->
+        <p><div style="background-color:lightskyblue"> This is a span title </div></p> <!-- Notice the text isn't pink even though we have in-line specifying p color:pink -->
+
+        <!-- Span will make changes for the block it ranges and leaves the rest with in/external formatting -->
+        <p>Coding is really interesting 
+            <span style="background-color:yellow"> because you can span to highlight </span> 
+            a portion of text
+        </p>
+        <br>
+
+        <!-- Div will make a container for the block it ranges and put it on a seperate line. -->
+        <!-- Whetever is after </div> gets displayed with no in/external formatting  -->
+        <p>Coding is really interesting 
+            <div style="background-color:yellow"> because you can span to highlight </div> 
+            a portion of text
+        </p>
+        
+        <!-- Underdered List (bullet points) -->
+        <div style="background-color:papayawhip">
+            <h1> Coffee Store List </h2>
+            <ul>
+                <li><b><u><span style="color: red"> Cafe </span></u></b></li>
+                    <ul>
+                        <li> Napkins </li>
+                        <li> Sugar </li>
+                        <li> Creamer </li>
+                        <li> Trash bags </li>
+                    </ul>
+                <li><b><u><span style="color: red"> Drive-Through </span></u></b></li>
+                    <ul>
+                        <li> Cup holders </li>
+                        <li> Stir sticks</li>
+                    </ul>
+                <li><b><u><span style="color: red"> Back of House </span></u></b></li>
+                    <ul>
+                        <li> Dish & Hand soap </li>
+                        <li> Cups {10oz, 16oz, 24oz} </li>
+                        <li><i> Milk </i></li>
+                            <div style="background-color:lightgreen">
+                            <ul>
+                                <li> 2% </li>
+                                <li> Whole </li>
+                                <li> Oat </li>
+                                <li> Cashew </li>
+                                <li> Coconut </li>
+                                <li> Almond </li>
+                            </ul>
+                            </div>
+                        <li><i> Syrups </i></li>
+                            <div style="font-weight: bold">
+                            <ul>
+                                <li> Brown Sugar </li>
+                                <li> White Chocolate Mocha </li>
+                                <li> Peppermint </li>
+                            </ul>
+                            </div>
+                    </ul>
+            </ul> <!-- end unordered list -->
+        </div> <!-- end div -->
+
+        <!-- Ordered List (numbered)-->
+        <h1> Make a Frappe </h1>
+        <ol>
+            <li> Take the correct size cup </li>
+            <li> Pump coffee roast in cup </li>
+            <li> Add Syrup </li>
+            <li> Add ice </li>
+            <li> Add toppings </li>
+            <li> Put the lid on and blend </li>
+            <li> Top with whipped cream, caramel, and a cherry </li>
+        </ol>
+
+        <!-- Description List -->
+        <!-- Made of key-value pairs dt=key  dd=value -->
+        <h1> What is a Wizard </h1>
+        <dt> Wizard </dt>
+            <dd> A magic student that has arrived to save the world</dd>
+            <dd> They carry an Amulet, Dagger, and Spellbook</dd>
+        <dt> Amulet </dt>
+            <dd> An item that grans the wizard more power in combat</dd>
+            <dd> Can be enchanted so it will not come off the wizard's neck </dd>
+        <dt> Dagger </dt>
+            <dd> A mystical knife that grants the wizard damage abilities </dd>
+            <dt> 3 types of Daggers </dt> <!-- this will line up with Dagger and not be indented. Fire, earth and wind will be indented once though -->
+                <dd> Fire </dd>
+                <dd> Earth </dd>
+                <dd> Wind </dd>
+
+        <!-- Tables -->
+        <h1> Store Hours </h1>
+        <table border="1" style="background-color:red"> <!-- Increase number to increase border width, setting border color to red -->
+            <tr align="center" style="background-color: skyblue"> <!-- Table row, align center and make the background sky blue -->
+                <th width="100"> Sunday </th> <!-- Table Header -->
+                <th width="100"> Monday </th> <!-- Table Header -->
+                <th width="100"> Tuesday </th> <!-- Table Header -->
+                <th width="100"> Wednesday </th> <!-- Table Header -->
+                <th width="100"> Thursday </th> <!-- Table Header -->
+                <th width="100"> Friday </th> <!-- Table Header -->
+                <th width="100"> Saturday </th> <!-- Table Header -->
+            </tr>
+            <!-- Create a new Table Row and populate with Table Data -->
+            <tr align="center" style="background-color:white"> 
+                <td> Closed </td> <!-- Table data -->
+                <td> 6am - 10pm </td>
+                <td> 7am - 10pm </td>
+                <td> 7am - 10pm </td>
+                <td> 6am - 11pm </td>
+                <td> 7am - 11pm </td>
+                <td> 7am - 10am </td>
+            </tr>
+        </table> <br>
+
+        <!-- Create a Button -->
+        <a href="http://google.com" target="_blank">
+            <button style="font-size: 25px; background-color: blue; color: white"> click me </button>
+        </a> <br>
+
+        <!-- Call a JavaScript function with button -->
+        <button onclick="doSomething()" style="font-size: 25px; background-color: yellow; color: black"> Function button </button>
+        <p id="greeting"> Good Morning </p>
+        <script>
+            // Click the button to change the text from "Good Morning" to "Good Night"
+            function doSomething(){
+                document.getElementById("greeting").innerHTML = "Good Night"
+            }
+        </script>
+
+        <!-- How To Create a Form -->
+        <!-- To send the form to an external file, include the action keyword with the file in quotes -->
+        <!-- In method, "POST" is used for confidential information entered on form
+                        "GET" is used for non-confidential information entered on form -->
+        <!-- Encrypt the file with enctype="multipart/form-data" -->
+        <div style="background-color:aliceblue">
+        <form action="outputExternal.pfp" method="POST" enctype="multipart/form-data">
+            <label for="username"> Username: </label> <!-- <label for="" must be same as <input id="" (input is for this label)-->
+                <input type="text" id="username" placeholder="Enter user" maxLength="15" required> <br> <!-- username is required.-->
+            <label for="password"> Password: </label>
+                <input type="password" id="password" placeholder="Enter password" required> <br>
+            <label for="email"> Email: </label>
+                <input type="email" id="email" placeholder="Enter email" required> <br>
+            <label for="phone"> Phone Number: </label>
+                <input type="tel" id="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required> <br>
+            <label for="bday"> Birthdate: </label>
+                <input type="date" id="bday"> <br>
+            <!-- Number Entry  -->
+            <label for="quantity"> Quantity: </label>
+                <input type="number" id="quantity" value="0"> <br> <!-- value sets quantity to 0 automatically if user doesn't enter number (so required isn't needed)-->
+            <!-- Radio Buttons -->
+            <label for="title"> Mr. </label>
+                <input name="title" type="radio" id="Mr." value="Mr.">
+            <label for="title"> Mrs. </label>
+                <input name="title" type="radio" id="Mrs." value="Mrs.">
+            <label for="title"> Dr. </label>
+                <input name="title" type="radio" id="Dr." value="Dr."> <br>
+            <!-- Dropdown Menu -->
+            <label for="payment"> Payment Method: </label>
+            <select id="payment">
+                <option value="Visa"> Visa </option>
+                <option value="Mastercard"> Mastercard </option>
+                <option value="American Express"> American Express </option>
+            </select> <br>
+            <!-- Textbox -->
+            <label for="comment"> Comment: </label>
+                <textarea id="comment" rows="3" cols="25"></textarea> <br>
+            <!-- Upload File -->
+            <label for="file"> Select File: </label>
+                <input type="file" id="file" accept="image/png, image/jpg"> <br> <!-- I only accept png and jpg images-->
+            <!-- Submit button -->
+            <input type="submit">
+        </form>
+        </div>
+
+        <!-- Border Manipulation with CSS -->
+        <h1> Border-style: </h1>
+        <h3 id="a"> Dashed </h3>
+        <h3 style="border-style: dashed"> Dashed in-line without CSS (all these functions can be written inline html)</h3>
+        
+        <h3 id="b"> Dotted </h3>
+        <h3 id="c"> double </h3>
+        <h3 id="d"> groove </h3>
+        <h3 id="e"> ridge </h3>
+        <h3 id="f"> inset </h3>
+        <h3 id="g"> outset </h3>
+        <h3 id="h"> solid </h3>
+        
+        <h3 id="i"> width: 10px </h3>
+        <h3 id="j"> color: blue </h3>
+        <h3 id="k"> radius: 50px </h3>
+        
+        <!-- Shadows -->
+        <h1 id="shadow"> Joseph </h1>
+        <div id="box1"></div>
+
+        <!-- Margins -->
+        <!-- Creates a Alpha box that is right justified 50px from the top and 250px from the bottom-->
+        <!-- Then under is an Omega box that is defaultly left justified -->
+        <!-- Under, we have Beta which has a margin of 300px padding on all sides  -->
+        <div class="box" id="alpha"> Alpha </div>
+        <div class="box" id="omega"> Omega </div>
+        <div class="box" id="beta"> Beta </div>
+
+        <!-- Float -->
+        <!-- normally, this image would just be at the left and then the text below it, we float the text around the image-->
+        <img src="Media/Frappe.jpg" alt="image of frappe" height="150px" id="image1">
+        <p>This delicious drink is generally made of water, espresso, sugar, milk, ice and is shaken, 
+            blended or beaten to combine the ingredients. Enjoyed in a tall glass, it tends to be served with 
+            whipped cream and toppings like sweet sauces. A Frappé is traditionally made with coffee, but it doesn't 
+            have to be! <br> <br>
+            Though a frappé has been traditionally made with coffee, you can make other flavorful frappé drinks with teas, 
+            juices or hot chocolate; the possibilities are endless. There are many different variations of this popular 
+            blended icy drink that was first inspired in Europe, decades ago. The word frappé comes from the French verb 
+            frapper which means to slap, knock, or beat. <br> <br>
+            How does a frappé differ from a smoothie, iced coffee, or iced cappuccino? A frappé is blended longer, til a 
+            substantial foam has been created, and the ice is well-blended. If a frappé is shaken in a cocktail shaker, 
+            crushed ice can be added with the coffee or whole ice after shaking. Smoothies or iced cappuccinos are blended 
+            to the preferred ice consistency, regardless of foam. Iced coffee is often not beaten, but served as strong coffee 
+            served on ice. Since the blending process is similar for an iced cappuccino or frappé cappuccino, it's often difficult 
+            to see or know the difference.
+        </p>
+
+        <!-- Overflow -->
+        <!-- A div box when overflowed with text cn respond by making overflow visible, hidden, including scrollbar, auto -->
+        <div id="overflow">
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque saepe libero fuga a quod corrupti quo quam earum repellat omnis quas excepturi molestiae tenetur atque quidem, quasi perspiciatis voluptate illo!</p>
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque saepe libero fuga a quod corrupti quo quam earum repellat omnis quas excepturi molestiae tenetur atque quidem, quasi perspiciatis voluptate illo!</p>
+            <!-- overflow: visible      shows the overflowed text
+                 overflow: hidden       doesn't showed the overflowed text (but you may interact w it **can still copy)
+                 overflow: scroll       adds a scroll bar for overflowed text ALWAYS 
+                 overflow: auto         only displays scroll bar when box is overflowed -->
+        </div>
+
+        <!-- Display Properties (block-level or inline) -->
+        <!-- HTML elements have a default display value, either they are block-level or inline. 
+             Block-level elements starts on a new line, take up the fill width available:
+                h1, div, p, form, header, footer
+             Inline elements do not start on a new line, the width is limited to what is needed:
+                span, a, img
+
+             Div is a block-level element, it will take the entire width available. 
+             Span is not a block-level element, it is inline. It only takes up the space need. 
+         -->
+        <div id="div"> Div (default Block-level element) </div>
+        <span id="span"> Span (default Inline element) </span> <br>
+        <div id="divInline"> Div (Inline) </div>
+        <span id="spanBlock"> Span (Block-level) </span>
+        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error delectus maiores facere neque mollitia at quam cum porro veniam, repellendus, minus non dolores maxime repellat, accusamus veritatis natus dignissimos in.</p>
+        
+        <!-- Height and Width -->
+        <div class="HWBox">
+            <h1> This is #1 </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sequi iure consectetur incidunt, nisi vero. Soluta libero quo, optio quae odio dolores iure quod eos culpa pariatur nobis delectus maiores.</p>
+        </div>
+
+        <div class="HWBox">
+            <h1> This is #2 </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sequi iure consectetur incidunt, nisi vero. Soluta libero quo, optio quae odio dolores iure quod eos culpa pariatur nobis delectus maiores.</p>
+        </div>
+            <!-- Stack the boxes by squeezing them and then expanding  -->
+        <div class="HWBox2">
+            <h1> This is #1 </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sequi iure consectetur incidunt, nisi vero. Soluta libero quo, optio quae odio dolores iure quod eos culpa pariatur nobis delectus maiores.</p>
+        </div>
+
+        <div class="HWBox2">
+            <h1> This is #2 </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sequi iure consectetur incidunt, nisi vero. Soluta libero quo, optio quae odio dolores iure quod eos culpa pariatur nobis delectus maiores.</p>
+        </div>
+
+             <!-- Boxes in div container --> 
+         <div class="container">
+            <div class="yellowBoxes">
+                <h1> This is #1 </h1>
+            </div>
+            <div class="yellowBoxes">
+                <h1> This is #2 </h1>
+            </div>
+        </div>
+
+        <!-- Positions -->
+        <!-- There 5 possible positions: 
+             Relative   positioned relative to where it is normally
+             Fixed      positioned relative to the viewpoint 
+             Absolute   positioned relative to the nearest ancestor 
+             Sticky     positioned based on scroll position
+             Static     default position for an element -->
+        <div id="fixedBox">
+            <h1> position: fixed </h1>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam doloremque, molestiae consequatur vero quasi fuga, consequuntur ut nobis quisquam incidunt tenetur tempora maxime cum harum inventore eveniet hic corrupti ipsum?</p>
+        </div>
+
+        <div id="relativeBox">
+            <h1> position: relative </h1>
+        </div>
+        
+        <div id="absoluteBox">
+            <h1> positon: absolute</h1>
+        </div>
+
+        <div id="stickyBox">
+            <h1> position: sticky </h1>
+        </div>
+
+        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus perferendis cumque debitis. Excepturi iste molestias veniam eum, voluptatibus illum inventore commodi, reiciendis et animi laborum neque rem harum quod cupiditate.</p>
+        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus perferendis cumque debitis. Excepturi iste molestias veniam eum, voluptatibus illum inventore commodi, reiciendis et animi laborum neque rem harum quod cupiditate.</p>
+        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus perferendis cumque debitis. Excepturi iste molestias veniam eum, voluptatibus illum inventore commodi, reiciendis et animi laborum neque rem harum quod cupiditate.</p>
+        
+        <!-- Add Footer -->
+        <footer style="background-color:mediumpurple">
+            <hr> <!-- horizontal row-->
+            author: Joseph Abdulwahab <br>
+            <small> &copy; copyright reserved </small> 
+            <small> <a href="mailto:abduljoseph33@gmail.com"> abduljoseph33@gmail.com </a></small> 
+        </footer>
+        <!-- Insert a background photo -->
+    </body> <!-- end body-->
+</html> <!-- end html -->

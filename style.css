@@ -1,0 +1,210 @@
+/* External style appilications; Methods before In-line style applications */
+.rubikDoodleFont{
+    font-size: 5em;
+    font-weight: bold;
+    font-family: "Rubik Doodle Shadow", "Roboto", "sans-serif", "Madimi One", system-ui;
+    font-style: italic;
+}
+.robotoFont{
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+body{ 
+    background-color: green;    /* body background-color has already been set so this doesn't change just showing method calling*/
+    color:black;
+    /* Background image */
+        /* background-image: url(Media/Mariah.png);  
+        /* background-repeat: no-repeat; /* Smaler images will repeat to fill screen (checkerboard). Doesn't repeat now.*/
+        /* background-position: center;  /* Centers background image */
+        /* background-attachment: fixed; /* Fixed in a position no matter if window is expanded or contracted */
+        /* background-size: cover; /* Makes the image take up the entire background of window*/
+}
+p{                             
+    background-color: grey;
+}
+#p1{
+    background-color: red; /* p1 is also odd, but it's color remains red and doesn't turn yellow*/
+}
+#p2{
+    font-size: 40px;
+    background-color: orange;/* p2 is odd, but it will not change the background-color to yellow in the odd function.*/
+}
+.even{
+    background-color:rgb(0, 17, 255);
+}
+.odd{
+    background-color:yellow;
+}
+#madimiOne{
+    font-family: "Madimi One";
+    font-size: 2em; 
+}
+
+#a{ border-style: dashed; }
+#b{ border-style: dotted; }
+#c{ border-style: double; }
+#d{ border-style: groove; }
+#e{ border-style: ridge; }
+#f{ border-style: inset; }
+#g{ border-style: outset; }
+#h{ border-style: solid; }
+#i{ 
+    border-style: solid;
+    border-width: 10px; 
+}
+#j{ 
+    border-style: solid;
+    border-color: blue; 
+}
+#k{ 
+    border-style: solid;
+    border-radius: 50px; 
+}
+
+#shadow{ /* horizontalOFFSET verticalOFFSET blurpx colorOfShadow*/
+    text-shadow: 20px 3px 3px blue, -10px -25px 5px red; /* multiple shadows separated by comma*/
+}
+
+#box1{
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    /* horizontalOFFSET vertical OFFSET */
+    box-shadow: 20px 3px 3px green; 
+}
+
+.box{
+    border: 5px solid;
+    font-size: 5em;
+    height: 250px;
+    width: 250px;
+}
+
+#alpha{
+    background-color: red;
+    margin-top: 50px;
+    margin-bottom: 250px;
+    margin-left: auto; /* this line makes alpha right-justified (sticks to right of webpage)*/
+}
+
+#omega{
+    text-align: center;
+    background-color: cyan;
+}
+
+#beta{
+    background-color: green;
+    text-align: right;
+    margin: 300px ; /* Applies margin on all sides */
+}
+
+#image1{
+    float: left; /* Put the image on the left and float text around it */
+    margin-right: 20px; /* Add margin right of the photo */
+}
+
+#overflow{
+    border: 2px solid;
+    height: 55px;
+    overflow: visible;
+    overflow: hidden;
+    overflow: scroll;
+    overflow: auto;
+}
+
+#div{
+    background-color:red;
+}
+#span{
+    background-color: blue;
+}
+#divInline{
+    display: inline;
+    background-color:red; /* inline cannot really have a height, width, or all-side margin */
+}
+#spanBlock{
+    display: block;
+    background-color: blue;
+    height: 200px; /* blocks can have height and widths*/
+    width: 150px;
+    margin: 20px;
+    display: inline-block; /* puts block in line (next to other)*/
+ /* display: none;         /* Stop displaying the element*/
+}
+
+.HWBox{
+    border: 2px solid; 
+    padding: 25px; /* Add padding between text and box border */
+    height: auto;  /* Adjust height of box based on text */
+    width: 50%;    /* How much % Width of screen I'd like to take*/
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+ /* float: right *//* Flips the order of boxes, (This is #2 on left, This is #1 on right)*/
+}
+.HWBox2{
+    border: 2px solid; 
+    padding: 25px; /* Add padding between text and box border */
+    height: auto;  /* Adjust height of box based on text */
+    width: 50%;    /* How much % Width of screen I'd like to take*/
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+    /* Shrinking to expanding stacks the boxes */
+    max-width: 25%;  /* Shrinks the 2 boxed to skinny rectangles*/
+    min-width: 75%;  /* Expands and stacks the 2 boxes*/
+ /* float: right *//* Flips the order of boxes, (This is #2 on left, This is #1 on right)*/
+}
+
+.container{
+    margin-top: 1000px;       /* Move these 2 new boxes down*/
+    background-color: grey;
+    height: 50vh;             /* 50% of the viewable height */
+}
+
+.yellowBoxes{
+    background-color: yellow;
+    border: 2px solid;
+    padding: 25px;           /* Add padding between text and box border */
+    text-align: center;
+    float: right;
+    box-sizing: border-box;  /* include padding and border in the box's total width and height calculation */
+    max-width: 25%;          /* Skinny rectangles when contraining width to 25% */
+    min-height: 50%;        /* %of the container*/
+}
+
+#relativeBox{
+    /* The box is shifted 20px down and 20px to the right of where it would normally be placed */
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    position: relative;
+    top: 30px;   /* where it was originally, push box down 100px */
+    left: 250px;   /* move box 20px to the right of its normal position */
+}
+#fixedBox{
+    top: 20px;
+    left: 800px;
+    width: 200px;
+    height: 100px;
+    background-color: yellow;
+    position: fixed;
+}
+#absoluteBox{
+    width:200px;
+    height: 200px;
+    background-color: red;
+    position: absolute; /* positioned relative to nearest ancestor */
+}
+
+#stickyBox{
+    top:-200px;
+    width:100px;
+    height: 100px;
+    background-color: olive;
+    position: sticky; /* allocates room for paragraph, unlike fixed*/
+    /* top: 300px */
+    /* left: 50px; */
+}
+

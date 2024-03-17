@@ -1,0 +1,9 @@
+body{
+    background-image: url("Media/SnowGIF.gif");
+    background-size: cover;
+    color: white; /* make all the text white*/
+}
+
+a{ /* change color of hyperlinks */
+    color: lightblue;
+}
